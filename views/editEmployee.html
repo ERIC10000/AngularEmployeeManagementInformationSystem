@@ -1,0 +1,41 @@
+<div class="container bg-primary p-5 m-5">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title text-white">Update Employee Info</h5>
+                <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+
+            </div>
+
+
+            <div class="modal-body card shadow m-5 p-5">
+                <form>
+                    <input type="text" placeholder="Enter First Name" class="form-control" ng-model="first_name"><br>
+                    <input type="text" placeholder="Enter Last Name" class="form-control" ng-model="last_name"><br>
+                    <input type="text" placeholder="Enter Address" class="form-control" ng-model="address"><br>
+                    <input type="text" placeholder="Enter Salary" class="form-control" ng-model="salary"><br>
+                    <input type="text" placeholder="Enter Date of Birth" class="form-control" ng-model="dob"><br>
+
+                </form>
+                <p class="lead text-center">{{msg}}</p>
+                <p class="lead text-center">{{statusValue}}</p>
+                
+            </div>
+
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger me-2" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-success" ng-click="updateData(first_name, last_name, address, salary, dob)">Update</button>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
